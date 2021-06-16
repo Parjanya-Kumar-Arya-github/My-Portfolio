@@ -23,5 +23,5 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Profile.urls')),
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATICFILES_DIRS[0]}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
