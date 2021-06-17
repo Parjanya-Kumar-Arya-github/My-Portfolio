@@ -258,10 +258,11 @@
                             <button type="submit" name="send">Send message</button>
                         </div>
                         {% if messages %}
+                        
+                        <span class="message" id="message">Message Sent!</span>
                         <script>
-                            document.location='#contact';
+                            document.location='#message';
                         </script>
-                        <span class="message">Message Sent!</span>
 
                         {% endif %}
                     </form>
