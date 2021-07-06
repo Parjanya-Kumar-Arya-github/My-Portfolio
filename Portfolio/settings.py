@@ -128,7 +128,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,"static")
 #     BASE_DIR / "static",
 # ]
 
-if not DEBUG:
+if DEBUG:
       EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
       EMAIL_HOST_USER = "phantomkingpk12@gmail.com"
       EMAIL_HOST = 'smtp.gmail.com'
